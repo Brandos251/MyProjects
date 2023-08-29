@@ -1,0 +1,1083 @@
+/*--------------------ШРИФТЫ--------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:ital,wght@0,400;1,300;1,400&family=Play:wght@400;700&family=Roboto:wght@500&family=Tinos&display=swap');
+/*--------------------ШРИФТЫ--------------------*/
+
+/*--------------------базовые стили--------------------*/
+body{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* в шапке */
+.container{
+    padding: 20px 119px;
+}
+
+/* для карточек */
+.cards-container{
+    padding-left: 60px;
+}
+
+span{
+    color: #BC9060;
+    margin-left: 5px;
+}
+
+.mail{color: #0047FF;}
+/* ************ */
+
+/*-----------------------------------------------------*/
+
+/*--------------------ЭФФЕКТЫ ПРИ НАВЕДЕНИИ--------------------*/
+
+/* в шапке ВЕРХНЯЯ */
+.nav:hover{color:rgb(123, 120, 120)}
+
+/* в шапке НИЖНЯЯ */
+button:hover,
+.btn-service:hover{background-color: #af5104;}
+button:hover i{
+    margin-left: 10px;
+    color:#fff;
+}
+
+/* спрятанное меню в шапке */
+.close:hover,
+.hidden-item:hover{color: #000000;}
+
+/* баннер */
+.btn-banner:hover,
+.btn-banner.active:hover{background-color: #5b5b5b; color: #fff;}
+
+/* слайдер стрелки */
+.arrow-prev:hover,
+.arrow-next:hover{transform: scale(1.4);}/* увеличнеие на 140 процентов */
+
+/* footer */
+.up-btn:hover{transform: translateY(-10px);}
+/*-------------------------------------------------------------*/
+
+/*--------------------СТИЛИ ДЛЯ БЛОКА ШАПКИ--------------------*/
+header{
+    background-image: url("../img/bg.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    transition: color .3s linear;
+}
+
+
+.header-holder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.contact{
+    border-right: 2px solid #fff;
+    height: 80px;
+    position: relative;
+    padding-left: 100px;
+    right: 76px;
+}
+
+.nav.active{
+    position: absolute;
+    top: 25px;
+    left: 0px;
+}
+
+.item{
+    position: absolute;
+    top: 25px;
+    left: 124px;
+    color: #fff;
+    font-size: 30px;
+}
+
+/* НИЖНЯЯ ЧАСТЬ ШАПКИ */
+.title{
+    font-family: 'Play', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 69px;
+}
+
+.subtext{
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 25px;
+    padding-top: 28px;
+    padding-bottom: 54px;
+}
+
+button{
+    background-color: #F98907;
+    color: black;
+    padding: 15px 45px;
+    border-radius: 15px;
+    transition: background-color .3s linear;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    font-weight: bold;
+}
+
+.btn{
+    position: relative;
+}
+
+.fa-solid.fa-arrow-right.active.btn{
+    position: absolute;
+    top: 18px;
+    left: 163px;
+}
+
+button i{
+    transition: margin 600ms ease;
+}
+
+/* ---------------------СТИЛИ ДЛЯ СПРЯТАННОГО МЕНЮ---------- */
+
+.hidden-menu{
+    width: 290px;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    z-index: 1;
+    text-align: center;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+}
+
+
+.close{
+    font-size: 40px;
+    float: right;
+    margin-right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 600ms ease;
+}
+
+h2{
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+ul{list-style: none;}
+
+li{
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.hidden-item{
+    color: #BC9060;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 600ms ease;
+}
+/* ------------------------------------------------ */
+
+/* --------------НОВЫЙ БЛОК КАРТОЧКИ------------- */
+.image{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 9px;
+}
+
+.card-title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    padding-bottom: 5px;
+}
+
+.card-subtext{
+    display: flex;
+    justify-content: center;
+    /* font-family: 'Tinos', serif; */
+    font-size: 17px;
+    color: #656363;
+}
+
+/* главный блок для КАРТОЧКИ */
+.card{
+    background-color: #ffffff;
+    box-shadow: 10px 10px 40px 20px #0000001A;
+    width: 33%;
+    margin-left: 20px;
+    margin-top: -135px;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 5%;
+}
+
+/* главный блок для ВСЕХ карточек */
+.cards-holder{
+    display: flex;
+}
+/*-------------------------------------------------------------*/
+
+/* ----------------НОВЫЙ БЛОК УСЛУГИ------------- */
+/*************стили для верхнего блока*************/
+.title-service{
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 88px;
+}
+
+.image-price{
+    display: flex;
+    justify-content: center;
+}
+
+.price-title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Play', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.price-description{
+    display: flex;
+    justify-content: center;
+    /* font-family: 'Tinos', serif; */
+    font-size: 17px;
+    color: #656363;
+    text-align: center;
+}
+
+/* главный блок для карточки */
+.price{
+    width: 33%;
+    margin-bottom: 15px;
+}
+
+/* главный блок для ВСЕХ карточек */
+.up-price-holder{
+    display: flex;
+    margin-top: 100px;
+}
+/*************стили для нижнего блока*************/
+
+.down-price-holder{
+    display: flex;
+    margin-top: 30px;
+}
+
+.button{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-service{
+    text-align: center;
+    background-color: #F98907;
+    text-decoration: none;
+    color: #000000;
+    padding: 15px 30px;
+    border-radius: 15px;
+    transition: background-color .3s linear;
+}
+/* ------------------------------------------------ */
+
+/* ---------------------НОВЫЙ БЛОК БАННЕР---------- */
+
+.banner{
+    background-image: url(../img/bg2.jpg);
+    background-size: cover;
+    margin-top: 70px;
+    padding: 133px 0px;
+}
+
+.banner-title{
+    color: #fff;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    margin-bottom: 35px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.banner-subtext{
+    color: #fff;
+    text-align: center;
+    font-family: 'Tinos', serif;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.btn-banner{
+    color: #0029FF;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #CECCCC;
+    padding: 15px 30px;
+    border-radius: 15px;
+    transition: background-color .3s linear;
+}
+
+.btn-banner.active{transition: color .3s linear;}
+/* ------------------------------------------------ */
+
+/* ---------------------НОВЫЙ БЛОК РАБОТА САЙТА---------- */
+.work-title{
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    color: #000000;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 88px 0px;
+   
+}
+
+.work-image{
+    text-align: center;
+    margin-top: 149px;
+}
+
+.firstText-title{
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.firstText-subText{
+    /* font-family: 'Tinos', serif; */
+    font-size: 15px;
+    text-align: center;
+    color: #656363;
+}
+
+/*Главный блок текстов*/
+.work-holder{
+    position: relative;
+}
+
+.firstText{
+    position: absolute;
+    top: 35px;
+    right: 690px;
+    
+}
+
+.secondText{
+    position: absolute;
+    top: 230px;
+    right: 310px;
+}
+
+.thirdText{
+    position: absolute;
+    top: 426px;
+    left: 367px;
+}
+/* ------------------------------------------------ */
+
+/* ---------------------НОВЫЙ БЛОК ОТЗЫВЫ---------- */
+.reviews{
+    background-color: #DDDCDC;
+    margin-top: 88px;
+}
+
+.reviews-title{
+    font-family: 'Play', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 74px;
+   
+}
+
+/* главный блок отвечающий за карточку */
+.up-reviews-holder,
+.down-reviews-holder{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 80px;
+   
+}
+
+.up-reviews-title{
+    font-family: 'Tinos', serif;
+    color: #656363;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 23px;
+}
+
+.up-name{
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+.user-post{
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    color: #656363;
+    left: 20px;
+    text-align: center;
+}
+
+.add-mail{
+    text-align: center;
+    padding-top: 80px;
+    /* font-family: 'Play', sans-serif; */
+    font-size: 30px;
+}
+/* ------------------------------------------------ */
+
+/* ---------------------НОВЫЙ БЛОК КОМПАНИЯ---------- */
+
+.company-title{
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin: 80px 0px;
+}
+
+.right-title{
+    font-family: 'Open Sans', sans-serif;
+    color: #0029FF;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.right-description{
+    /* font-family: 'Tinos', serif; */
+    font-size: 17px;
+    color: #656363;
+    padding-left: 10px;
+}
+
+.first-company,
+.second-company,
+.third-company{
+    width: 50%;
+    display: flex;
+    margin-left: 320px;
+    margin-top: 10px;
+}
+
+.third-company{margin-bottom: 80px;}
+/* ------------------------------------------------ */
+
+/* ---------------------НОВЫЙ БЛОК ФАКТЫ---------- */
+
+.facts{
+    background-color: #DDDCDC;
+}
+
+.facts-title{
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.facts-description{
+    /* font-family: 'Tinos', serif; */
+    font-size: 17px;
+    color: #656363;
+    text-align: center;
+}
+
+/****************СТИЛИ ДЛЯ СЛАЙДЕРА*****************/
+.down-facts-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slider-image{
+    width: 400px;
+    height: 200px;
+}
+
+.down-facts{
+    position: relative;
+}
+
+.down-facts .arrow-next{
+    position: absolute;
+    top: 86px;
+    left: 1289px;
+}
+
+.down-facts .arrow-prev{
+    position: absolute;
+    top: 89px;
+    left: -60px; 
+    cursor: pointer;
+}
+
+.arrow-prev,
+.arrow-next{font-size: 30px;}
+
+.fa-solid.fa-arrow-right,
+.fa-solid.fa-arrow-left{display: none;}
+
+
+/* ------------------------------------------------ */
+
+/* ---------------------НОВЫЙ БЛОК ЧАСТЫЕ ВОПРОСЫ---------- */
+
+.questions-title{
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    padding: 80px 0px;
+}
+
+.comments{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.comments-holder,
+.comments-holder-two,
+.comments-holder-three{
+    background-color: #DDDCDC;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 40px 40px #0000001A;
+}
+
+.user-name{
+    font-family: 'Tinos', serif;
+    color: #494949;
+    font-size: 20px;
+}
+
+.user-question{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.user-question-company{
+    font-family: 'Tinos', serif;
+    font-size: 20px;
+    color: #494949;
+    padding-left: 20px;
+}
+/* -------------------------------------------------------- */
+
+/* ---------------------НОВЫЙ БЛОК КАРТА---------- */
+
+.map-title{
+    font-family: 'Play', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    margin: 80px 0px;
+}
+
+.holder{
+    display: flex;
+    justify-content: space-around;
+}
+
+.yandex-contact{text-align: center;}
+
+.yandex-title{
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.yandex-number,
+.yandex-mail{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+/* -------------------------------------------------------- */
+
+/* ---------------------НОВЫЙ БЛОК ПОДВАЛ---------- */
+
+footer{
+    background-color: #ecebeb;
+    margin-top: 40px;
+}
+
+.footer-holder{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy{
+    padding-right: 500px;
+    padding-top: 15px;
+}
+
+.up-btn{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #eee;
+    border: 3px solid silver;
+    cursor: pointer;
+    color: #3b3b3b;
+    transition: transform 600ms ease;
+}
+
+/* ------------------------------------------------ */
+
+/* ---------------------СТИЛИ ДЛЯ JAVASCRIPT---------- */
+
+.fixed{
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid silver;
+}
+
+/* ------------------------------------------------ */
+
+/* ---------------------АДАПТИВНОСТЬ---------- */
+
+@media only screen and (max-width: 769px){
+    /* **********FOOTER********** */
+    .container {
+      padding: 20px;
+    }
+
+    .footer-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .copy {
+        padding-right: 0;
+        padding-top: 0;
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .up-btn {
+        margin-top: 15px;
+    }
+    /* ******************** */
+
+    /* **********КАРТА*******/
+    .map-title {
+        font-size: 40px;
+        margin: 40px 0px;
+    }
+    
+    .holder {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .yandex-title {
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+    
+    .yandex-number,
+    .yandex-mail {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+    /* ******************** */
+
+    /* **********ЧАСТЫЕ ВОПРОСЫ********** */
+    .questions-title {
+        font-size: 40px;
+        padding: 40px 0px;
+    }
+    
+    .comments-holder,
+    .comments-holder-two,
+    .comments-holder-three {
+        border-radius: 10px;
+        margin-top: 10px;
+        box-shadow: 5px 5px 20px 20px #0000001A;
+    }
+    
+    .user-name {
+        font-size: 16px;
+    }
+    
+    .user-question {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .user-question-company {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    /* ******************** */
+
+    /* **********ФАКТЫ********** */
+    .down-facts-title {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    
+    .slider-image {
+        width: 100%;
+        height: auto;
+    }
+    
+    .down-facts .arrow-next,
+    .down-facts .arrow-prev {
+        font-size: 20px;
+    }
+
+    .facts-description br{display: none;}
+    /* ******************** */
+
+    /* **********КОМПАНИЯ********** */
+    .company-title {
+        font-size: 40px;
+        margin: 40px 0px;
+    }
+    
+    .right-title{
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    
+    .right-description {
+        font-size: 14px;
+        padding-left: 5px;
+    }
+    
+    .first-company,
+    .second-company,
+    .third-company {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* ******************** */
+   
+    /* **********ОТЗЫВЫ********** */
+    .reviews-title {
+        font-size: 40px;
+        padding-top: 40px;
+    }
+    
+    .up-reviews-title {
+        font-size: 14px;
+        padding: 10px;
+        margin-bottom: 15px;
+        padding-right: 15px;
+    }
+
+    .up-reviews-holder,
+    .down-reviews-holder{
+        display: block;
+        align-items: center;
+    }
+
+    .up-reviews-title br{display: none;}
+    
+    .up-name,
+    .user-post {
+        font-size: 14px;
+    }
+    
+    .add-mail {
+        padding-top: 40px;
+        font-size: 24px;
+    }
+
+    .user{padding-bottom: 15px;}
+    /* ******************** */
+
+    /* **********РАБОТЫ САЙТА********** */
+    .work-title {
+        font-size: 40px;
+        margin: 40px 0px;
+    }
+    
+    .work-image {
+        margin-top: 80px;
+    }
+    
+    .firstText-title {
+        font-size: 18px;
+    }
+    
+    .firstText-subText {
+        font-size: 14px;
+    }
+    
+    .firstText {
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+    
+    .secondText {
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+    
+    .thirdText {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+    /* ******************** */
+
+    /* **********БАННЕР********** */
+    .banner {
+        margin-top: 40px;
+        padding: 80px 0px;
+    }
+    
+    .banner-title {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .banner-subtext {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .btn-banner {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    /* ******************** */
+
+    /* **********УСЛУГИ********** */
+    .title-service {
+        font-size: 40px;
+        margin-top: 60px;
+    }
+    
+    .image-price,
+    .price-title,
+    .price-description {
+        justify-content: center;
+    }
+    
+    .price {
+        width: 100%;
+    }
+    
+    .up-price-holder {
+        flex-wrap: flex;
+        margin-top: 60px;
+    }
+    
+    .down-price-holder {
+        margin-top: 20px;
+    }
+    /* ******************** */
+
+    /* **********КАРТОЧКИ********** */
+    .card {
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .cards-holder {
+        flex-wrap: wrap;
+    }
+    /* ******************** */
+
+    /* **********HEADER********** */
+    .header-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact {
+        border-right: none;
+        height: auto;
+        padding-left: 0;
+        margin-bottom: 20px;
+        right: auto;
+    }
+    
+    .nav.active,
+    .item {
+        position: static;
+        margin-bottom: 10px;
+    }
+    
+    .title {
+        text-align: center;
+        font-size: 50px;
+        margin-top: 70px;
+    }
+    
+    .subtext {
+        font-size: 20px;
+        line-height: 18px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 50px;
+    }
+    
+    button {
+        padding: 8px 20px;
+        font-size: 12px;
+        width: 250px;
+    }
+
+    .btn{
+        text-align: center;
+    }
+    
+    .fa-solid.fa-arrow-right.active.btn {
+        position: static;
+        margin-left: 5px;
+    }
+
+    .fa-solid.fa-bars{
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+    /* ******************** */
+
+
+    /* **********СПРЯТАННОЕ МЕНЮ********** */
+    .hidden-menu {
+        width: 300px;
+        top: -300px
+    }
+    
+    .close {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+    
+    h2 {
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    
+    li {
+        margin-bottom: 5px;
+    }
+    /* ******************** */
+}/* ------------------------------------------------ */
+
+@media only screen and (min-width: 320px) and (max-width: 426px) {
+    /* шапка */
+    .container {
+        padding: 10px;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .item {
+        left: 40px;
+        font-size: 16px;
+    }
+
+    .navigation{
+        display: block;
+        margin-left: 25px;
+    }
+
+    .fa-solid.fa-bars{
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+    /* ******* */
+
+    /* нижняя часть шапки */
+    .title {
+        font-size: 40px;
+        margin-top: 40px;
+    }
+
+    .subtext {
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    button {
+        padding: 10px 30px;
+        border-radius: 10px;
+    }
+
+    .fa-solid.fa-arrow-right.active.btn {
+        top: 14px;
+        left: 123px;
+    }
+    /* ****** */
+
+    /* карточки */
+    .card-title{font-size: 20px;}
+    /* *** */
+
+    .title-service {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .price {
+        width: 100%;
+    }
+
+    .up-price-holder,
+    .down-price-holder {
+        flex-direction: column;
+    }
+
+    .button {
+        margin-top: 20px;
+    }
+}
